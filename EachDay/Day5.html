@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5</title>
+</head>
+
+<body>
+    <h1>Welcome to Day 5</h1>
+    <h2>What is JavaScript?</h2>
+    <p>JavaScript is a web programming language that brings interactivity and functionality to websites.While HTML
+        structures the content and CSS styles it,Javascript adds dynamic behaviour.</p>
+    <h2>Why JavaScript was introduced?</h2>
+    <p>Javascript was introduced in 1995 by Brendan Eich at Netscape to bring interactivity and dynamic behaviour to web
+        pages.</p>
+    <ul>
+        <li>To allow developers to add interactive features like form validation, image sliders and dropdown menus that
+            could run directly in the browser.</li>
+        <li>To enable real-time updates to web pages without needing to reload the entire page,enhancing user experience.</li>
+        <li>JavaScript was designed to be easy to use, making it accessible for developers and even those without a deep
+            programming background.</li>
+        <li>Unlike server-side languages like PHP,JavaScript runs on the client side,reducing the load on servers and
+            speeding up web interactions.</li>
+        <li>It provided a way to make web pages more engaging,functional,and responsive to user actions.</li>
+    </ul>
+    <p>Here we print numbers from 1-500.</p>
+    <pre>
+    let titleH1 = document.getElementById("title");
+    titleH1.style.color = "red";
+    titleH1.innerText = "Numbers form 1-500";
+    
+    let numbersDiv = document.getElementById("numbers");
+    let numbersHtml = "";
+    for (let i = 1; i&lt;= 500; i++) {
+        numbersHtml = numbersHtml + "&lt;h2 class='badge text-bg-warning'> " + i + "&lt;/h2&gt;";
+    }
+    numbersDiv.innerHTML = numbersHtml;
+    </pre>
+    <p>Here we print numbers from 1-user input.</p>
+    <pre>
+    let titleH1 = document.getElementById("title");
+    titleH1.style.color = "red";
+
+    function printNumbers() {
+    let upto = document.getElementById("upperRange").value;
+    titleH1.innerText = "Numbers form 1-"+upto;
+
+    let numbersDiv = document.getElementById("numbers");
+    let numbersHtml = "";
+    for (let i = 1; i &lt;= upto; i++) {
+       numbersHtml = numbersHtml + "&lt;h2 class='badge text-bg-warning'&gt; " + i + "&lt;/h2&gt;";
+    }
+    numbersDiv.innerHTML = numbersHtml;
+ }
+    </pre>
+</body>
+
+</html>
