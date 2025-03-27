@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7</title>
+</head>
+
+<body>
+    <h1>Welcome to Day 7</h1>
+    <p>In the 'Program.cs' file, we have implemented various console applications to learn the basics of C#, including foundational programming concepts and looping structures.</p>
+    <ul>
+        <li>Initially, we implemented a basic program to print the age, demonstrating the use of variables, data types such as string, and basic input-output operations.</li>
+        <pre>
+    <code>
+    byte age=12;
+    Console.WriteLine(age);
+
+    string name="Mina";
+    Console.WriteLine(name);
+    </code>
+</pre>
+        <li>After,We take user input, convert it to uppercase, and print it.</li>
+        <pre>
+            <code>
+    //Allow user to enter their full name and print the name in uppercase
+    Console.Write("Your Fullname:");
+    string? fullname= Console.ReadLine();
+    string nameInUpper = fullname.ToUpper();
+    Console.WriteLine(nameInUpper);
+</code>
+</pre>
+        <li>We learn the use of string interpolation</li>
+        <pre>
+    <code>
+//$ is the string interpolation
+string firstFriend="Maria";
+string secondFriend="Scott";
+Console.WriteLine($"My friends are {firstFriend} and {secondFriend}");
+
+    </code>
+</pre>
+<li>Print the given number is odd or even using (if..else)loop.</li>
+<pre>
+    <code>
+var y =23425530;
+if(y%2==0){
+    Console.WriteLine($"{y} is even");
+}
+else{
+    Console.WriteLine($"{y} is odd");
+}
+    </code>
+</pre>
+<li>We use ternary operator(?:) to check number is odd or even. </li>
+<pre>
+    <code>
+//Using Ternary Operator
+var y=2340;
+var output = y % 2 == 0 ?$"{y} is even":$"{y} is odd";
+Console.WriteLine(output);
+    </code>
+</pre>
+<li>Number is exactly divisible by given number or not</li>
+<pre>
+    <code>
+//Find if r is perfectly divisible by given input number.
+var r = 121;
+var divider=13;
+var outputs = r % divider == 0 
+?$"{r} is  perfectly divisible by {divider}"
+:$"{r} is not perfectly divisible by {divider}";
+Console.WriteLine(outputs);
+    </code>
+</pre>
+<li>Check that the  number divided many times is perfectly divisible or not.</li>
+<pre>
+    <code>
+//Output:11 can divide 23456, 34 times.But it's not perfectly
+divisible by it.
+var r = 23456;
+var divider =11;
+var quotient=r/divider;
+var outputs = r % divider == 0 
+?$"{divider} can divide {r}, {quotient} times and perfectly divisible by it"
+:$"{divider} can divide {r}, {quotient} times.But it's not perfectly divisible by it";
+Console.WriteLine(outputs);
+
+    </code>
+</pre>
+<li>Print numbers between 1-1000 , divisible by 5 and 7.</li>
+<pre>
+    <code>
+//Print all numbers between 1-1000 which are divisible by 5 and 7.
+for(int i=1;i&lt;=1000;i++){
+Console.Write(i+" ");
+if(i%5==0 && i%7 ==0){
+Console.Write($"{i} ");
+}
+}    
+    </code>
+</pre>
+    </ul>
+
+</body>
+</html>
